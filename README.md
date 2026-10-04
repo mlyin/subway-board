@@ -24,7 +24,8 @@ Requests need the project's public anon key as a bearer token (it is in `index.h
 
 ## Updating
 
-- Page: edit `index.html` and push. GitHub Pages redeploys in about a minute.
+- Page: edit `index.html`, then `git push origin main main:gh-pages`. GitHub Pages
+  serves the `gh-pages` branch and redeploys in about a minute.
 - Function: redeploy `supabase/functions/board` to the `subway-board` Supabase
   project (`supabase functions deploy board`).
 
